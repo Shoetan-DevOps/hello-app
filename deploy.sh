@@ -22,8 +22,10 @@ create_namespace() {
 }
 
 # Create namespaces
+create_namespace traefik
 create_namespace "$PROMETHEUS_NAMESPACE"
 create_namespace "$WEBAPP_NAMESPACE"
+
 
 # Deploy Prometheus Helm chart
 echo "Deploying Prometheus Helm chart..."

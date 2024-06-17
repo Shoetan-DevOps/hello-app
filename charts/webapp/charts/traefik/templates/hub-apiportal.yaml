@@ -4,7 +4,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: apiportal
-  namespace: {{ template "traefik.namespace" . }}
+  namespace: traefik
   labels:
   {{- include "traefik.labels" . | nindent 4 }}
 spec:

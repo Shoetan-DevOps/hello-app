@@ -25,7 +25,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ template "traefik.fullname" . }}
-  namespace: {{ template "traefik.namespace" . }}
+  namespace: traefik
   labels:
   {{- include "traefik.labels" . | nindent 4 }}
   {{- with .Values.deployment.labels }}

@@ -19,6 +19,6 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: {{ include "traefik.serviceAccountName" $ }}
-    namespace: {{ template "traefik.namespace" $ }}
+    namespace: traefik
 {{- end -}}
 {{- end -}}

@@ -8,7 +8,7 @@ apiVersion: gateway.networking.k8s.io/v1alpha2
 kind: Gateway
 metadata:
   name: traefik-gateway
-  namespace: {{ default (include "traefik.namespace" .) .Values.experimental.kubernetesGateway.namespace }}
+  namespace: traefik
   labels:
     {{- include "traefik.labels" . | nindent 4 }}
   {{- with .Values.experimental.kubernetesGateway.annotations }}
